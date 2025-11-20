@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title">Hello, {{ current_user.name }}!</h3>
+                <p class="card-text">You are logged in as <strong>{{ current_user.email }}</strong>. This dashboard is a starting point for your blog.</p>
+                <p class="mb-0">Add your posts, comments, or profile settings here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
